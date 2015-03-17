@@ -13,8 +13,11 @@ An Angular JS directive I created for a work project to match div heights.
 ```js
 angular.module('MyApp', ['angular-matchheight']);
 ```
- - Add the `iln-countup` attribute to the divs you want to match
- - All divs with the `iln-countup` attribute will resize to the biggest on the page
+ - Add the `iln-match-height` attribute to the container of the elements you want to match
+ - All elements within the `iln-match-height` parent will resize to match height
 ```html
-<div iln-match-height>some content here</div>
+<div iln-match-height>
+    <div>these</div>
+    <div>will<br/>be<br/>the<br/>same<br/>height</div>
+</div>
 ```
